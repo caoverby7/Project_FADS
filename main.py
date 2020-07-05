@@ -12,6 +12,8 @@ cap = cv2.VideoCapture(0)
 bgReduct = cv2.createBackgroundSubtractorMOG2()
 
 
+# Save the resolution of the camera and print it to the console
+
 frameWidth = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frameHeight = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 print(frameWidth, frameHeight)
