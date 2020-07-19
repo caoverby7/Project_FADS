@@ -1,12 +1,19 @@
 #Import packages
+from imutils.video import VideoStream
+import argparse
 import cv2
 import argparse
-from imutils import *
+import imutils
 #import numpy as np
 from datetime import *
 import time
 
 #Code for initialization; Logs to log file
+ap = argparse.ArgumentParser()
+ap.add_argument("-v", "--video", help="path to the video file")
+ap.add_argument("-a", "--min-area", type=int, default=500, help="minimum area size")
+args = vars(ap.parse_args())
+
 logFile = open("FADS_Event_Log.txt", "w+")
 now = datetime.now()
 logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Program Initialized...\n"+now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Log File Initialized...\n")
@@ -16,14 +23,14 @@ now = datetime.now()
 logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Camera Connected\n")
 firstFrame = None
 width=500
-cntArea = cv2.contourArea(contours)
+
 
 #Code for execution
 #This is the main outter loop: Contains the core program. Continues until Q is pressed, then proceeds with cleanup and exit
 while True:
     #Setting up frames
     frame = videoStream.read()
-    frame = frame[1]
+    frame = frame if args.get("video", None) is None else frame[1]
     # resizing the frame
     frame = imutils.resize(frame, width=width)
     # convert each frame to grayscale
@@ -41,13 +48,14 @@ while True:
     thresh = cv2.dilate(thresh, None, iterations=2)
     countours = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     countours = imutils.grab_countours(countours)
+    cntArea = cv2.contourArea(countours)
     # loop over the countours
     for c in countours:
         # ignore if contour is too small
         if cv2.contourArea(c) < cntArea:
             continue
         (x, y, w, h) = cv2.boundingRect(c)
-		cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
     cv2.imshow("Fall Alert Detection System", frame)
 
@@ -55,7 +63,6 @@ while True:
         now = datetime.now()
         logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Program exit initialized...\n")
         break
-    break
 #Code for Cleanup and Exit, executed when Q is pressed
 now = datetime.now()
 logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Closing Log File and exiting program.\n")
