@@ -3,14 +3,20 @@ import cv2
 import argparse
 from imutils import *
 #import numpy as np
-#from datetime import *
+from datetime import *
 import time
 
-#Code for initialization
+#Code for initialization; Logs to log file
+logFile = open("FADS_Event_Log.txt", "w+")
+now = datetime.now()
+logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Program Initialized...\n"+now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Log File Initialized...\n")
 videoStream = VideoStream(src=0).start()
 time.sleep(3.0)
+now = datetime.now()
+logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Camera Connected\n")
 firstFrame = None
 width=500
+cntArea = cv2.contourArea(contours)
 
 #Code for execution
 #This is the main outter loop: Contains the core program. Continues until Q is pressed, then proceeds with cleanup and exit
@@ -23,26 +29,36 @@ while True:
     # convert each frame to grayscale
     grayscale = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     grayscale = cv2.GaussianBlur(grayscale, (21, 21), 0)
-    #Sets firstframe to grayscale if firstFrame is "None"; Should happen once on program initialization
+    #Sets firstframe from frame if fire pass; Should only happen once. Logs event to log file
     if firstFrame is None:
         firstFrame = grayscale
+        now = datetime.now()
+        logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"First Frame Fetched\n")
         continue
- 
     frameDelta = cv2.absdiff(firstFrame, grayscale)
     thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
     # dilate threshold image to fill in the holes  
     thresh = cv2.dilate(thresh, None, iterations=2)
-    # 
+    countours = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    countours = imutils.grab_countours(countours)
+    # loop over the countours
+    for c in countours:
+        # ignore if contour is too small
+        if cv2.contourArea(c) < cntArea:
+            continue
+        (x, y, w, h) = cv2.boundingRect(c)
+		cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-    
+    cv2.imshow("Fall Alert Detection System", frame)
 
-
-
-
-
-
-
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        now = datetime.now()
+        logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Program exit initialized...\n")
+        break
     break
 #Code for Cleanup and Exit, executed when Q is pressed
+now = datetime.now()
+logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Closing Log File and exiting program.\n")
+logFile.close()
 videoStream.release()
 cv2.destroyAllWindows()
