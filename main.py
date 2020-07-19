@@ -10,7 +10,7 @@ frameWidth = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frameHeight = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 print(frameWidth, frameHeight)
 # Continue loop as long as the video feed meets the resolution requirements
-while (frameWidth >= 1280 and frameHeight >= 720):
+while (True):
     # Returns true if the video feed still has frames left and then returns each frame from the video feed
     ret, frame = cap.read()
     # Convert each frame to grayscale
