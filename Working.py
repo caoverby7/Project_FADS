@@ -15,6 +15,7 @@ width=500
 #Code for execution
 #This is the main outter loop: Contains the core program. Continues until Q is pressed, then proceeds with cleanup and exit
 while True:
+    #Setting up frames
     frame = videoStream.read()
     frame = frame[1]
     # resizing the frame
