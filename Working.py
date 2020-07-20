@@ -10,7 +10,6 @@ import time
 
 #Code for initialization; Logs to log file
 ap = argparse.ArgumentParser()
-ap.add_argument("-v", "--video", help="path to the video file")
 ap.add_argument("-a", "--min-area", type=int, default=500, help="minimum area size")
 args = vars(ap.parse_args())
 
@@ -46,19 +45,15 @@ while True:
     thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
     # dilate threshold image to fill in the holes  
     thresh = cv2.dilate(thresh, None, iterations=2)
-    countours = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    countours = imutils.grab_countours(countours)
-    cntArea = cv2.contourArea(countours)
+    contours = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    contours = imutils.grab_contours(contours)
+    #cntArea = cv2.contourArea(contours)
     # loop over the countours
-    for c in countours:
+    for c in contours:
         # ignore if contour is too small
-        if cv2.contourArea(c) < cntArea:
-            continue
-        (x, y, w, h) = cv2.boundingRect(c)
+        if cv2.contourArea(c) < args["min_area"]:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-
     cv2.imshow("Fall Alert Detection System", frame)
-
     if cv2.waitKey(1) & 0xFF == ord('q'):
         now = datetime.now()
         logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Program exit initialized...\n")
