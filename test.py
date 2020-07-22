@@ -47,7 +47,7 @@ def startCapture():
         sys.exit()
 
 #This function displays the Video
-def displayVideo():
+def displayVideo(frame):
     #Add timestamp to the video
     frame = cv2.putText(frame, getFeedTimeStamp(), (5,400), font, 1, (0, 0, 255), 1)
     cv2.imshow("Fall Alert Detection System", frame)
@@ -69,7 +69,7 @@ while True:
     deltaFrame = cv2.absdiff(firstFrame, gaussFrame)
     threshFrame = cv2.threshold(deltaFrame, 25, 255, cv2.THRESH_BINARY)
     #Display Video
-    displayVideo()
+    displayVideo(frame)
     #Hotkey to break the loop
     if cv2.waitKey(1) & 0xFF == ord('q'):
         closeProgram()
