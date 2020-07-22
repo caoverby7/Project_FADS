@@ -1,76 +1,64 @@
-# Import packages
-from imutils.video import VideoStream
-import argparse
 import cv2
-import imutils
-#import numpy as np
-from datetime import *
-import time
+import numpy as np
 
-# Code for initialization; Logs to log file
-ap = argparse.ArgumentParser()
-ap.add_argument("-v", "--video", help="path to the video file")
-ap.add_argument("-a", "--min-area", type=int,
-                default=500, help="minimum area size")
-args = vars(ap.parse_args())
-
-logFile = open("FADS_Event_Log.txt", "w+")
-now = datetime.now()
-logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Program Initialized...\n" +
-              now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Log File Initialized...\n")
-videoStream = VideoStream(src=0).start()
-time.sleep(3.0)
-now = datetime.now()
-logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- "+"Camera Connected\n")
-firstFrame = None
-width = 500
-
-
-# Code for execution
-# This is the main outter loop: Contains the core program. Continues until Q is pressed, then proceeds with cleanup and exit
-while True:
-    # Setting up frames
-    frame = videoStream.read()
-    frame = frame if args.get("video", None) is None else frame[1]
-    # resizing the frame
-    frame = imutils.resize(frame, width=width)
-    # convert each frame to grayscale
+# Will accept video feed from first (zero-indexed) camera available to system (Usually a webcam)
+cap = cv2.VideoCapture(0)
+# Background subtraction algorithm MOG
+bgReduct = cv2.createBackgroundSubtractorMOG2()
+# Save the resolution of the camera and print it to the console
+frameWidth = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+frameHeight = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+print(frameWidth, frameHeight)
+# Continue loop as long as the video feed meets the resolution requirements
+while (frameWidth >= 1280 and frameHeight >= 720):
+    # Returns true if the video feed still has frames left and then returns each frame from the video feed
+    ret, frame = cap.read()
+    # Convert each frame to grayscale
     grayscale = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    grayscale = cv2.GaussianBlur(grayscale, (21, 21), 0)
-    # Sets firstframe from frame if fire pass; Should only happen once. Logs event to log file
-    if firstFrame is None:
-        firstFrame = grayscale
-        now = datetime.now()
-        logFile.write(now.strftime("%d/%m/%Y %H:%M:%S") +
-                      " --- "+"First Frame Fetched\n")
-        continue
-    frameDelta = cv2.absdiff(firstFrame, grayscale)
-    thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1]
-    # dilate threshold image to fill in the holes
-    thresh = cv2.dilate(thresh, None, iterations=2)
-    countours = cv2.findContours(
-        thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    countours = imutils.grab_countours(countours)
-    cntArea = cv2.contourArea(countours)
-    # loop over the countours
-    for c in countours:
-        # ignore if contour is too small
-        if cv2.contourArea(c) < cntArea:
-            continue
-        (x, y, w, h) = cv2.boundingRect(c)
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-
-    cv2.imshow("Fall Alert Detection System", frame)
-
+    # Create the foreground mask and apply it to the converted frame
+    fgmask = bgReduct.apply(grayscale)
+    # Display converted and masked feed
+    cv2.imshow('vidFeed', fgmask)
+    # Wait for a 'Q' keypress, then break the loop
+    # A bitwise AND operation is used to return only the last byte (0xFF) from the key pressed
+    # The last byte will always be same for each key, but modifier keys can change bits further down
+    # Therefore by accepting only the last byte, any changes made by modifier keys will be ignored
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        now = datetime.now()
-        logFile.write(now.strftime("%d/%m/%Y %H:%M:%S") +
-                      " --- "+"Program exit initialized...\n")
         break
-# Code for Cleanup and Exit, executed when Q is pressed
-now = datetime.now()
-logFile.write(now.strftime("%d/%m/%Y %H:%M:%S")+" --- " +
-              "Closing Log File and exiting program.\n")
-logFile.close()
-videoStream.release()
+
+
+#Loops
+#detectMovement is a loop that contains compareFrames and checks to see if movement has occured if True, executes detectHumanoid
+#def detectMovement():
+#detectHumanoid is a lopp that contains compareFrames and checks if the source of movement is humoid, rather than a household pet. If True, executes followHumanoid
+#def detectHumanoid()
+#followHumanoid is a loop that follows the humanoid subject until it leaves view or fall is detected. If humanoid leaves, program executes resetProgram. If humanoid falls, program executes sendAlert
+#def followHumanoid()
+
+#Functions
+#compareFrames takes the previous frame and current frame and compares them for the above loops
+#def compareFrames()
+    #We will want to pass the previous frame and current frame into this function. Recursion?
+#sendAlert executes if subjectFallen = True. Afterwards, programs executes resetProgram
+#def sendAlert()
+    #Are we wanting to just make a pop-up message that says "fall detected?"
+    #resetProgram()
+#Resets all states to default to start in outer "main" loop
+#def resetProgram()
+    #movementDetected = False
+    #subjectInFrame = False
+    #subjectFallen = False
+
+#States (Boolean)
+#movementDetected = False
+#subjectInFrame = False
+#subjectFallen = False
+
+
+
+
+
+
+# Important to release the capture after each time the program is finished running
+cap.release()
 cv2.destroyAllWindows()
