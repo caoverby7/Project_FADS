@@ -23,6 +23,7 @@ def closeProgram():
     logFile.close()
     cap.release()
     cv2.destroyAllWindows()
+    sys.exit()
 
 #This function trys to create a log file
 def createLogFile():
@@ -41,12 +42,15 @@ def startCapture():
         logFile.write(getLogTimeStamp()+" --- Camera feed sucessfully acquired!\n")
         return cap
     except:
-        print("Log File failed to generate. Terminating program...")
         logFile.write(getLogTimeStamp()+" --- No camera detected. Closing Program...\n")
         logFile.close()
         sys.exit()
 
-
+#This function displays the Video
+def displayVideo():
+    #Add timestamp to the video
+    frame = cv2.putText(frame, getFeedTimeStamp(), (5,400), font, 1, (0, 0, 255), 1)
+    cv2.imshow("Fall Alert Detection System", frame)
 
 firstFrame = None
 font = cv2.FONT_HERSHEY_SIMPLEX
@@ -64,17 +68,9 @@ while True:
         continue
     deltaFrame = cv2.absdiff(firstFrame, gaussFrame)
     threshFrame = cv2.threshold(deltaFrame, 25, 255, cv2.THRESH_BINARY)
-    #Place timestamp on frame
-    frame = cv2.putText(frame, getFeedTimeStamp(), (5,400), font, 1, (0, 0, 255), 1)
-    #Display frames in specific windows
-    cv2.imshow("gray feed",grayFrame)
-    cv2.imshow("Gaussian feed", gaussFrame)
-    cv2.imshow("test feed", frame)
-    cv2.imshow("delta", deltaFrame)
-    #cv2.imshow("thresh", threshFrame)
-
+    #Display Video
+    displayVideo()
     #Hotkey to break the loop
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+        closeProgram()
 
-closeProgram()
