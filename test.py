@@ -12,10 +12,10 @@ def getTimeStamp():
     return now
 
 #This function closes the program
-def closeProgram():
+def closeProgram(logFile, capture):
     writeToLog(logFile, "Terminating Program...")
     logFile.close()
-    cap.release()
+    capture.release()
     cv2.destroyAllWindows()
     sys.exit()
 
@@ -32,9 +32,9 @@ def createLogFile():
 #This function trys to initialized the camera feed
 def startCapture(logFile):
     try:
-        cap = cv2.VideoCapture(0)
+        capture = cv2.VideoCapture(0)
         writeToLog(logFile, "Camera feed sucessfully acquired!")
-        return cap
+        return capture
     except:
         writeToLog(logFile, "No camera detected. Closing Program...")
         logFile.close()
@@ -54,25 +54,15 @@ def writeToLog(logFile, strEvent):
 def main():
     firstFrame = None
     logFile = createLogFile()
-    cap = startCapture(logFile)
+    capture = startCapture(logFile)
     while True:
         #Read and modify frames
-        ret, frame = cap.read()
-        grayFrame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        gaussFrame = cv2.GaussianBlur(grayFrame, (9,9), 0)
-        #Get the first frame
-        if firstFrame is None:
-            firstFrame = gaussFrame
-            writeToLog(logFile, "First Frame Fetched")
-
-            continue
-        deltaFrame = cv2.absdiff(firstFrame, gaussFrame)
-        threshFrame = cv2.threshold(deltaFrame, 25, 255, cv2.THRESH_BINARY)
+        ret, frame = capture.read()
         #Display Video
         displayVideo(frame)
         #Hotkey to break the loop
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            closeProgram()
+            closeProgram(logFile, capture)
 
 #Script
 if __name__ == "__main__":
