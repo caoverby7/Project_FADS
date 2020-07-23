@@ -5,21 +5,15 @@ import numpy as np
 #import imutils
 import sys
 
-#This function acquires a timestamp for logging
-def getLogTimeStamp():
-    now = datetime.now()
-    now = now.strftime("%d/%m/%Y %H:%M:%S")
-    return now
-
-#This function acquires a timestamp for the video feed
-def getFeedTimeStamp():
+#This function acquires a timestamp
+def getTimeStamp():
     now = datetime.now()
     now = now.strftime("%d/%m/%Y %H:%M:%S")
     return now
 
 #This function closes the program
 def closeProgram():
-    logFile.write(getLogTimeStamp()+" --- Terminating Program...\n")
+    writeToLog(logFile, "Terminating Program...")
     logFile.close()
     cap.release()
     cv2.destroyAllWindows()
@@ -29,48 +23,57 @@ def closeProgram():
 def createLogFile():
     try:
         logFile = open("Test_Event_Log.txt", "w+")
-        logFile.write(getLogTimeStamp()+" --- Event Log Initialized...\n")
+        writeToLog(logFile, "Event Log Initialized...")
         return logFile
     except:
         print("Log File failed to generate. Terminating program...")
         sys.exit()
 
 #This function trys to initialized the camera feed
-def startCapture():
+def startCapture(logFile):
     try:
         cap = cv2.VideoCapture(0)
-        logFile.write(getLogTimeStamp()+" --- Camera feed sucessfully acquired!\n")
+        writeToLog(logFile, "Camera feed sucessfully acquired!")
         return cap
     except:
-        logFile.write(getLogTimeStamp()+" --- No camera detected. Closing Program...\n")
+        writeToLog(logFile, "No camera detected. Closing Program...")
         logFile.close()
         sys.exit()
 
 #This function displays the Video
-def displayVideo(frame):
-    #Add timestamp to the video
-    frame = cv2.putText(frame, getFeedTimeStamp(), (5,400), font, 1, (0, 0, 255), 1)
-    cv2.imshow("Fall Alert Detection System", frame)
+def displayVideo(videoFrame):
+    #Add timestamp to the video then display
+    frame = cv2.putText(videoFrame, getTimeStamp(), (5,400), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 1)
+    cv2.imshow("Fall Alert Detection System", videoFrame)
 
-firstFrame = None
-font = cv2.FONT_HERSHEY_SIMPLEX
-logFile = createLogFile()
-cap = startCapture()
-while True:
-    #Read and modify frames
-    ret, frame = cap.read()
-    grayFrame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    gaussFrame = cv2.GaussianBlur(grayFrame, (9,9), 0)
-    #Get the first frame
-    if firstFrame is None:
-        firstFrame = gaussFrame
-        logFile.write(getLogTimeStamp()+" --- "+"First Frame Fetched\n")
-        continue
-    deltaFrame = cv2.absdiff(firstFrame, gaussFrame)
-    threshFrame = cv2.threshold(deltaFrame, 25, 255, cv2.THRESH_BINARY)
-    #Display Video
-    displayVideo(frame)
-    #Hotkey to break the loop
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        closeProgram()
+#This function is called when an event is needed to be written to a log
+def writeToLog(logFile, strEvent):
+    logFile.write("["+getTimeStamp()+"] - "+strEvent+"\n")
 
+#This is the main function of the program
+def main():
+    firstFrame = None
+    logFile = createLogFile()
+    cap = startCapture(logFile)
+    while True:
+        #Read and modify frames
+        ret, frame = cap.read()
+        grayFrame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        gaussFrame = cv2.GaussianBlur(grayFrame, (9,9), 0)
+        #Get the first frame
+        if firstFrame is None:
+            firstFrame = gaussFrame
+            writeToLog(logFile, "First Frame Fetched")
+
+            continue
+        deltaFrame = cv2.absdiff(firstFrame, gaussFrame)
+        threshFrame = cv2.threshold(deltaFrame, 25, 255, cv2.THRESH_BINARY)
+        #Display Video
+        displayVideo(frame)
+        #Hotkey to break the loop
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            closeProgram()
+
+#Script
+if __name__ == "__main__":
+    main()
