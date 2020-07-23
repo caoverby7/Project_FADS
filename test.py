@@ -5,11 +5,22 @@ import numpy as np
 #import imutils
 import sys
 
+#This function inizilizes the program
+def initializeProgram():
+    try:
+        logFile = createLogFile()
+        capture = startCapture(logFile)
+        writeToLog(logFile, "Program fully initilized!")
+        return logFile, capture
+    except:
+        writeToLog(logFile, "ERROR: Initilization failed!")
+        sys.exit()
+
 #This function trys to create a log file
 def createLogFile():
     try:
         logFile = open("Test_Event_Log.txt", "w+")
-        writeToLog(logFile, "Event Log Initialized...")
+        writeToLog(logFile, "Event Log Initialized!")
         return logFile
     except:
         print("Log File failed to generate. Terminating program...")
@@ -36,6 +47,9 @@ def startCapture(logFile):
         logFile.close()
         sys.exit()
 
+#This function modifies frames from the video feed so that movement can be detected
+#def modifyFrames(frame):
+
 #This function displays the Video
 def displayVideo(videoFrame):
     #Add timestamp to the video then display
@@ -52,9 +66,8 @@ def closeProgram(logFile, capture):
 
 #This is the main function of the program
 def main():
+    logFile, capture = initializeProgram()
     firstFrame = None
-    logFile = createLogFile()
-    capture = startCapture(logFile)
     while True:
         #Read and modify frames
         ret, frame = capture.read()
