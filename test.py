@@ -5,20 +5,6 @@ import numpy as np
 #import imutils
 import sys
 
-#This function acquires a timestamp
-def getTimeStamp():
-    now = datetime.now()
-    now = now.strftime("%d/%m/%Y %H:%M:%S")
-    return now
-
-#This function closes the program
-def closeProgram(logFile, capture):
-    writeToLog(logFile, "Terminating Program...")
-    logFile.close()
-    capture.release()
-    cv2.destroyAllWindows()
-    sys.exit()
-
 #This function trys to create a log file
 def createLogFile():
     try:
@@ -28,6 +14,16 @@ def createLogFile():
     except:
         print("Log File failed to generate. Terminating program...")
         sys.exit()
+
+#This function is called when an event is needed to be written to a log
+def writeToLog(logFile, strEvent):
+    logFile.write("["+getTimeStamp()+"] - "+strEvent+"\n")
+
+#This function acquires a timestamp
+def getTimeStamp():
+    now = datetime.now()
+    now = now.strftime("%d/%m/%Y %H:%M:%S")
+    return now
 
 #This function trys to initialized the camera feed
 def startCapture(logFile):
@@ -46,9 +42,13 @@ def displayVideo(videoFrame):
     frame = cv2.putText(videoFrame, getTimeStamp(), (5,400), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 1)
     cv2.imshow("Fall Alert Detection System", videoFrame)
 
-#This function is called when an event is needed to be written to a log
-def writeToLog(logFile, strEvent):
-    logFile.write("["+getTimeStamp()+"] - "+strEvent+"\n")
+#This function closes the program
+def closeProgram(logFile, capture):
+    writeToLog(logFile, "Terminating Program...")
+    logFile.close()
+    capture.release()
+    cv2.destroyAllWindows()
+    sys.exit()
 
 #This is the main function of the program
 def main():
