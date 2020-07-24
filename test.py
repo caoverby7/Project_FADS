@@ -19,8 +19,9 @@ def initializeProgram():
 #This function trys to create a log file
 def createLogFile():
     try:
-        fileName = "TEST_Event_Logs\\["+getTimeStamp()+"]"+"_Test_Event_Log.txt"
-        logFile = open(fileName, "w+")
+        #fileName = "TEST_Event_Logs\\["+getTimeStamp()+"]"+"_Test_Event_Log.txt"
+        #logFile = open(fileName, "w+")
+        logFile = open("TEST_Event_Logs\\Test_Event_Log.txt", "w+")
         writeToLog(logFile, "Event Log Initialized!")
         return logFile
     except:
@@ -66,15 +67,16 @@ def closeProgram(logFile, capture):
 #This is the main function of the program
 def main():
     logFile, capture = initializeProgram()
+    #End new code test
     while (True):
         #Read and modify frames
-        ret, frame = capture.read()    
+        ret, frame = capture.read()
         #Display Video
         displayVideo(frame)
         #Hotkey to break the loop
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            closeProgram(logFile, capture)
-
+            break
+    closeProgram(logFile, capture)
 #Script
 if __name__ == "__main__":
     main()
