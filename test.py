@@ -19,7 +19,8 @@ def initializeProgram():
 #This function trys to create a log file
 def createLogFile():
     try:
-        logFile = open("Test_Event_Log.txt", "w+")
+        fileName = "TEST_Event_Logs\\["+getTimeStamp()+"]"+"_Test_Event_Log.txt"
+        logFile = open(fileName, "w+")
         writeToLog(logFile, "Event Log Initialized!")
         return logFile
     except:
@@ -33,7 +34,7 @@ def writeToLog(logFile, strEvent):
 #This function acquires a timestamp
 def getTimeStamp():
     now = datetime.now()
-    now = now.strftime("%d/%m/%Y %H:%M:%S")
+    now = now.strftime("%d%b%Y %H%M%S")
     return now
 
 #This function trys to initialized the camera feed

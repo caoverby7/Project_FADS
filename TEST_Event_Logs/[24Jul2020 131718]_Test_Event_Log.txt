@@ -1,0 +1,4 @@
+[24Jul2020 131718] - Event Log Initialized!
+[24Jul2020 131735] - Camera feed sucessfully acquired!
+[24Jul2020 131735] - Program fully initilized!
+[24Jul2020 131744] - Terminating Program...
