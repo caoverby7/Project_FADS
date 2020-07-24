@@ -40,16 +40,14 @@ def getTimeStamp():
 #This function trys to initialized the camera feed
 def startCapture(logFile):
     try:
-        capture = cv2.VideoCapture(0)
+        #capture = cv2.VideoCapture(0)
+        capture = cv2.VideoCapture('TEST_Walking.mp4')
         writeToLog(logFile, "Camera feed sucessfully acquired!")
         return capture
     except:
         writeToLog(logFile, "No camera detected. Closing Program...")
         logFile.close()
         sys.exit()
-
-#This function modifies frames from the video feed so that movement can be detected
-#def modifyFrames(frame):
 
 #This function displays the Video
 def displayVideo(videoFrame):
@@ -68,10 +66,9 @@ def closeProgram(logFile, capture):
 #This is the main function of the program
 def main():
     logFile, capture = initializeProgram()
-    firstFrame = None
-    while True:
+    while (True):
         #Read and modify frames
-        ret, frame = capture.read()
+        ret, frame = capture.read()    
         #Display Video
         displayVideo(frame)
         #Hotkey to break the loop
