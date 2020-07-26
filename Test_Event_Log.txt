@@ -397,3 +397,762 @@
 
 
 
+********************New Initialization********************
+
+[26Jul2020 103633] - Event Log Initialized!
+[26Jul2020 103633] - Camera feed sucessfully acquired!
+[26Jul2020 103633] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 103634] - Event Log Initialized!
+[26Jul2020 103634] - Camera feed sucessfully acquired!
+[26Jul2020 103634] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 103755] - Event Log Initialized!
+[26Jul2020 103755] - Camera feed sucessfully acquired!
+[26Jul2020 103755] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 103826] - Event Log Initialized!
+[26Jul2020 103826] - Camera feed sucessfully acquired!
+[26Jul2020 103826] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 103848] - Event Log Initialized!
+[26Jul2020 103848] - Camera feed sucessfully acquired!
+[26Jul2020 103848] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 103941] - Event Log Initialized!
+[26Jul2020 103941] - Camera feed sucessfully acquired!
+[26Jul2020 103941] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 104023] - Event Log Initialized!
+[26Jul2020 104023] - Camera feed sucessfully acquired!
+[26Jul2020 104023] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 104035] - Event Log Initialized!
+[26Jul2020 104035] - Camera feed sucessfully acquired!
+[26Jul2020 104035] - Program fully initilized!
+[26Jul2020 104054] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112510] - Event Log Initialized!
+[26Jul2020 112511] - Camera feed sucessfully acquired!
+[26Jul2020 112511] - Program fully initilized!
+[26Jul2020 112524] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112534] - Event Log Initialized!
+[26Jul2020 112551] - Camera feed sucessfully acquired!
+[26Jul2020 112551] - Program fully initilized!
+[26Jul2020 112624] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112740] - Event Log Initialized!
+[26Jul2020 112740] - Camera feed sucessfully acquired!
+[26Jul2020 112740] - Program fully initilized!
+[26Jul2020 112746] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112803] - Event Log Initialized!
+[26Jul2020 112803] - Camera feed sucessfully acquired!
+[26Jul2020 112803] - Program fully initilized!
+[26Jul2020 112818] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112820] - Event Log Initialized!
+[26Jul2020 112820] - Camera feed sucessfully acquired!
+[26Jul2020 112820] - Program fully initilized!
+[26Jul2020 112834] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112848] - Event Log Initialized!
+[26Jul2020 112848] - Camera feed sucessfully acquired!
+[26Jul2020 112848] - Program fully initilized!
+[26Jul2020 112856] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112858] - Event Log Initialized!
+[26Jul2020 112858] - Camera feed sucessfully acquired!
+[26Jul2020 112858] - Program fully initilized!
+[26Jul2020 112905] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112907] - Event Log Initialized!
+[26Jul2020 112907] - Camera feed sucessfully acquired!
+[26Jul2020 112907] - Program fully initilized!
+[26Jul2020 112909] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112917] - Event Log Initialized!
+[26Jul2020 112917] - Camera feed sucessfully acquired!
+[26Jul2020 112917] - Program fully initilized!
+[26Jul2020 112923] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112924] - Event Log Initialized!
+[26Jul2020 112924] - Camera feed sucessfully acquired!
+[26Jul2020 112924] - Program fully initilized!
+[26Jul2020 112926] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112930] - Event Log Initialized!
+[26Jul2020 112930] - Camera feed sucessfully acquired!
+[26Jul2020 112930] - Program fully initilized!
+[26Jul2020 112938] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112940] - Event Log Initialized!
+[26Jul2020 112940] - Camera feed sucessfully acquired!
+[26Jul2020 112940] - Program fully initilized!
+[26Jul2020 112942] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112945] - Event Log Initialized!
+[26Jul2020 112945] - Camera feed sucessfully acquired!
+[26Jul2020 112945] - Program fully initilized!
+[26Jul2020 112948] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 112952] - Event Log Initialized!
+[26Jul2020 112952] - Camera feed sucessfully acquired!
+[26Jul2020 112952] - Program fully initilized!
+[26Jul2020 112956] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113001] - Event Log Initialized!
+[26Jul2020 113001] - Camera feed sucessfully acquired!
+[26Jul2020 113001] - Program fully initilized!
+[26Jul2020 113015] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113016] - Event Log Initialized!
+[26Jul2020 113016] - Camera feed sucessfully acquired!
+[26Jul2020 113016] - Program fully initilized!
+[26Jul2020 113020] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113027] - Event Log Initialized!
+[26Jul2020 113027] - Camera feed sucessfully acquired!
+[26Jul2020 113027] - Program fully initilized!
+[26Jul2020 113031] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113053] - Event Log Initialized!
+[26Jul2020 113053] - Camera feed sucessfully acquired!
+[26Jul2020 113053] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 113140] - Event Log Initialized!
+[26Jul2020 113141] - Camera feed sucessfully acquired!
+[26Jul2020 113141] - Program fully initilized!
+[26Jul2020 113209] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113211] - Event Log Initialized!
+[26Jul2020 113211] - Camera feed sucessfully acquired!
+[26Jul2020 113211] - Program fully initilized!
+[26Jul2020 113214] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113219] - Event Log Initialized!
+[26Jul2020 113219] - Camera feed sucessfully acquired!
+[26Jul2020 113219] - Program fully initilized!
+[26Jul2020 113228] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113307] - Event Log Initialized!
+[26Jul2020 113307] - Camera feed sucessfully acquired!
+[26Jul2020 113307] - Program fully initilized!
+[26Jul2020 113326] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113411] - Event Log Initialized!
+[26Jul2020 113411] - Camera feed sucessfully acquired!
+[26Jul2020 113411] - Program fully initilized!
+[26Jul2020 113430] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113448] - Event Log Initialized!
+[26Jul2020 113448] - Camera feed sucessfully acquired!
+[26Jul2020 113448] - Program fully initilized!
+[26Jul2020 113507] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113613] - Event Log Initialized!
+[26Jul2020 113614] - Camera feed sucessfully acquired!
+[26Jul2020 113614] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 113634] - Event Log Initialized!
+[26Jul2020 113634] - Camera feed sucessfully acquired!
+[26Jul2020 113634] - Program fully initilized!
+[26Jul2020 113653] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 113711] - Event Log Initialized!
+[26Jul2020 113711] - Camera feed sucessfully acquired!
+[26Jul2020 113711] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 113753] - Event Log Initialized!
+[26Jul2020 113753] - Camera feed sucessfully acquired!
+[26Jul2020 113753] - Program fully initilized!
+[26Jul2020 113811] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114035] - Event Log Initialized!
+[26Jul2020 114035] - Camera feed sucessfully acquired!
+[26Jul2020 114035] - Program fully initilized!
+[26Jul2020 114054] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114059] - Event Log Initialized!
+[26Jul2020 114059] - Camera feed sucessfully acquired!
+[26Jul2020 114100] - Program fully initilized!
+[26Jul2020 114118] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114201] - Event Log Initialized!
+[26Jul2020 114201] - Camera feed sucessfully acquired!
+[26Jul2020 114201] - Program fully initilized!
+[26Jul2020 114204] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114340] - Event Log Initialized!
+[26Jul2020 114340] - Camera feed sucessfully acquired!
+[26Jul2020 114340] - Program fully initilized!
+[26Jul2020 114359] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114407] - Event Log Initialized!
+[26Jul2020 114408] - Camera feed sucessfully acquired!
+[26Jul2020 114408] - Program fully initilized!
+[26Jul2020 114426] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114512] - Event Log Initialized!
+[26Jul2020 114512] - Camera feed sucessfully acquired!
+[26Jul2020 114512] - Program fully initilized!
+[26Jul2020 114531] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114551] - Event Log Initialized!
+[26Jul2020 114551] - Camera feed sucessfully acquired!
+[26Jul2020 114551] - Program fully initilized!
+[26Jul2020 114610] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114652] - Event Log Initialized!
+[26Jul2020 114652] - Camera feed sucessfully acquired!
+[26Jul2020 114652] - Program fully initilized!
+[26Jul2020 114711] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 114800] - Event Log Initialized!
+[26Jul2020 114800] - Camera feed sucessfully acquired!
+[26Jul2020 114800] - Program fully initilized!
+[26Jul2020 114819] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 115232] - Event Log Initialized!
+[26Jul2020 115232] - Camera feed sucessfully acquired!
+[26Jul2020 115232] - Program fully initilized!
+[26Jul2020 115251] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 120106] - Event Log Initialized!
+[26Jul2020 120106] - Camera feed sucessfully acquired!
+[26Jul2020 120106] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 120133] - Event Log Initialized!
+[26Jul2020 120133] - Camera feed sucessfully acquired!
+[26Jul2020 120133] - Program fully initilized!
+[26Jul2020 120143] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 120216] - Event Log Initialized!
+[26Jul2020 120216] - Camera feed sucessfully acquired!
+[26Jul2020 120216] - Program fully initilized!
+[26Jul2020 120235] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 120240] - Event Log Initialized!
+[26Jul2020 120240] - Camera feed sucessfully acquired!
+[26Jul2020 120240] - Program fully initilized!
+[26Jul2020 120259] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 120304] - Event Log Initialized!
+[26Jul2020 120304] - Camera feed sucessfully acquired!
+[26Jul2020 120304] - Program fully initilized!
+[26Jul2020 120322] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 120353] - Event Log Initialized!
+[26Jul2020 120353] - Camera feed sucessfully acquired!
+[26Jul2020 120353] - Program fully initilized!
+[26Jul2020 120412] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 120457] - Event Log Initialized!
+[26Jul2020 120457] - Camera feed sucessfully acquired!
+[26Jul2020 120457] - Program fully initilized!
+[26Jul2020 120516] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 121041] - Event Log Initialized!
+[26Jul2020 121041] - Camera feed sucessfully acquired!
+[26Jul2020 121041] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 121109] - Event Log Initialized!
+[26Jul2020 121109] - Camera feed sucessfully acquired!
+[26Jul2020 121109] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 121213] - Event Log Initialized!
+[26Jul2020 121213] - Camera feed sucessfully acquired!
+[26Jul2020 121213] - Program fully initilized!
+[26Jul2020 121232] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 122436] - Event Log Initialized!
+[26Jul2020 122436] - Camera feed sucessfully acquired!
+[26Jul2020 122436] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 122517] - Event Log Initialized!
+[26Jul2020 122517] - Camera feed sucessfully acquired!
+[26Jul2020 122517] - Program fully initilized!
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122521] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122522] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122523] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122524] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122525] - Subject has returned to an upright position.
+[26Jul2020 122526] - Subject has returned to an upright position.
+[26Jul2020 122526] - Subject has returned to an upright position.
+[26Jul2020 122526] - Subject has returned to an upright position.
+[26Jul2020 122526] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 5 seconds.
+[26Jul2020 122530] - Subject has returned to an upright position.
+[26Jul2020 122530] - Subject has returned to an upright position.
+[26Jul2020 122530] - Subject has returned to an upright position.
+[26Jul2020 122530] - Subject has returned to an upright position.
+[26Jul2020 122530] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122531] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122532] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122533] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122534] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122535] - Subject has returned to an upright position.
+[26Jul2020 122536] - Subject has returned to an upright position.
+[26Jul2020 122536] - Subject has returned to an upright position.
+[26Jul2020 122536] - Subject has returned to an upright position.
+[26Jul2020 122536] - Subject has returned to an upright position.
+[26Jul2020 122536] - Subject has returned to an upright position.
+[26Jul2020 122536] - Subject has returned to an upright position.
+[26Jul2020 122536] - Subject has returned to an upright position.
+[26Jul2020 122537] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 122602] - Event Log Initialized!
+[26Jul2020 122602] - Camera feed sucessfully acquired!
+[26Jul2020 122602] - Program fully initilized!
+[26Jul2020 122610] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 5 seconds.
+[26Jul2020 122615] - Subject has returned to an upright position.
+[26Jul2020 122621] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 122710] - Event Log Initialized!
+[26Jul2020 122710] - Camera feed sucessfully acquired!
+[26Jul2020 122710] - Program fully initilized!
+[26Jul2020 122718] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 5 seconds.
+[26Jul2020 122722] - Subject has returned to an upright position.
+[26Jul2020 122729] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 122737] - Event Log Initialized!
+[26Jul2020 122737] - Camera feed sucessfully acquired!
+[26Jul2020 122737] - Program fully initilized!
+[26Jul2020 122745] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 5 seconds.
+[26Jul2020 122750] - Subject has returned to an upright position.
+[26Jul2020 122756] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 123430] - Event Log Initialized!
+[26Jul2020 123430] - Camera feed sucessfully acquired!
+[26Jul2020 123430] - Program fully initilized!
+[26Jul2020 123449] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 123801] - Event Log Initialized!
+[26Jul2020 123801] - Camera feed sucessfully acquired!
+[26Jul2020 123801] - Program fully initilized!
+[26Jul2020 123809] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 5 seconds.
+[26Jul2020 123814] - Subject has returned to an upright position.
+[26Jul2020 123820] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 125254] - Event Log Initialized!
+[26Jul2020 125254] - Camera feed sucessfully acquired!
+[26Jul2020 125254] - Program fully initilized!
+[26Jul2020 125302] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 5 seconds.
+[26Jul2020 125307] - Subject has returned to an upright position.
+[26Jul2020 125313] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 125349] - Event Log Initialized!
+[26Jul2020 125349] - Camera feed sucessfully acquired!
+[26Jul2020 125349] - Program fully initilized!
+[26Jul2020 125353] - Subject has returned to an upright position.
+[26Jul2020 125357] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[26Jul2020 125402] - Subject has returned to an upright position.
+[26Jul2020 125408] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 125440] - Event Log Initialized!
+[26Jul2020 125440] - Camera feed sucessfully acquired!
+[26Jul2020 125440] - Program fully initilized!
+[26Jul2020 125444] - Subject has returned to an upright position.
+[26Jul2020 125448] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[26Jul2020 125452] - Subject has returned to an upright position.
+[26Jul2020 125458] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 125528] - Event Log Initialized!
+[26Jul2020 125528] - Camera feed sucessfully acquired!
+[26Jul2020 125528] - Program fully initilized!
+[26Jul2020 125532] - Subject has returned to an upright position.
+[26Jul2020 125536] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[26Jul2020 125540] - Subject has returned to an upright position.
+[26Jul2020 125543] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 125545] - Event Log Initialized!
+[26Jul2020 125545] - Camera feed sucessfully acquired!
+[26Jul2020 125545] - Program fully initilized!
+[26Jul2020 125549] - Subject has returned to an upright position.
+[26Jul2020 125553] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[26Jul2020 125557] - Subject has returned to an upright position.
+[26Jul2020 125604] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 125617] - Event Log Initialized!
+[26Jul2020 125617] - Camera feed sucessfully acquired!
+[26Jul2020 125617] - Program fully initilized!
+[26Jul2020 125621] - Subject has returned to an upright position.
+[26Jul2020 125625] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[26Jul2020 125630] - Subject has returned to an upright position.
+[26Jul2020 125636] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 125742] - Event Log Initialized!
+[26Jul2020 125742] - Camera feed sucessfully acquired!
+[26Jul2020 125742] - Program fully initilized!
+[26Jul2020 125746] - Subject has returned to an upright position.
+[26Jul2020 125750] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[26Jul2020 125755] - Subject has returned to an upright position.
+[26Jul2020 125801] - Terminating Program...
+
+
+

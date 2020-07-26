@@ -12,8 +12,9 @@ import ctypes
 #Globals
 fallState = False
 prevFallState = False
-startTimer = 0
-currentTimer = 0
+startAlertTimer = 0
+currentAlertTimer = 5
+statusText = "No move"
 
 #This function inizilizes the program
 def initializeProgram():
@@ -68,7 +69,7 @@ def startCapture():
 
 #This function implements processes the video
 def processVideo(frame, args, firstFrame):
-    text = "No movement detected."
+    
     frame = imutils.resize(frame, width=500)
     frameGray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
     frameBlur = cv2.GaussianBlur(frameGray, (21, 21), 5)
@@ -84,51 +85,52 @@ def processVideo(frame, args, firstFrame):
             continue
         (x, y, w, h) = cv2.boundingRect(c)
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-        text = monitorSubject(w,h)
-    return frame, firstFrame, text
+        monitorSubject(w,h)
+    return frame, firstFrame
 
 #This function monitors a subject when in frame
 def monitorSubject(xaxis, yaxis):
     x = int(xaxis)
     y = int(yaxis)
-    prevFallState = fallState
-    if x>y:
+    #prevFallState = fallState
+    global statusText, fallState, currentAlertTimer, startAlertTimer
+    if x>y and startAlertTimer > 0:
         fallState = True
-        return "Fall"
-    elif y<=x:
+        statusText = "Suspected fall has occured"
+        currentAlertTimer = 10 - (time.time() - startAlertTimer)
+        print("sending alert in: "+str(currentAlertTimer))
+    elif x>y:
+        fallState = True
+        statusText = "Suspected fall has occured"
+        startAlertTimer = time.time()
+        writeToLog("Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.")
+        print("sending alert in: "+str(currentAlertTimer))
+    elif x<y and currentAlertTimer < 10:
         fallState = False
-        return "Safe"
+        startAlertTimer = 0
+        currentAlertTimer = 10
+        writeToLog("Subject has returned to an upright position.")
+        statusText = "Safe"
+    elif x<y:
+        fallState = False
+        statusText = "Safe"
     else:
         fallState = False
-        return "No movement detected."
+        #statusText = "No movment is detected"
 
 #This function sends an alert
 #def sendAlert():
     #Code goes here
-
-#This handles the timer start
-def alertTimer():
-    if (prevFallState == False && fallStae == True):
-        startTimer = time.time()
-    elif (prevFallState == True && fallState == True):
-        currentTimer = time.time() - startTimer
-        if currentTimer == 60:
-            sendAlert()
-    elif (prevFallState == True && fallState == False):
-        startTimer = 0
-    else:
-     startTimer = 0
     
-
 #This is the code for the alert box
-def alertBox(title, text, style):
+def alertBox(title, style):
     return ctypes.windll.user32.MessageBoxW(0, text, title, style)
 
 #This function displays the Video
-def displayVideo(frame, text):
+def displayVideo(frame):
     #Add timestamp to the video then display
-    frame = cv2.putText(frame, getTimeStamp(), (10, 200), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 1)
-    cv2.putText(frame, "Room Status: {}".format(text), (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+    frame = cv2.putText(frame, "Date/Time: {}".format(getTimeStamp()), (5, 275), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
+    cv2.putText(frame, "Room Status: {}".format(statusText), (5, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
     cv2.imshow("Fall Alert Detection System", frame)
 
 #This function closes the program
@@ -149,9 +151,9 @@ def main():
         if frame is None:
             break
         #Process video feed
-        frame, firstFrame, text = processVideo(frame, args, firstFrame)
+        frame, firstFrame = processVideo(frame, args, firstFrame)
         #Display processed video feed
-        displayVideo(frame, text)
+        displayVideo(frame)
         time.sleep(0.05)
         #Hotkey to break the loop
         if cv2.waitKey(1) & 0xFF == ord('q'):
