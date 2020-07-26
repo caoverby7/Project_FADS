@@ -10,11 +10,12 @@ import threading
 import ctypes
 
 #Globals
-fallState = False
-prevFallState = False
 startAlertTimer = 0
-currentAlertTimer = 5
-statusText = "No move"
+defaultTimer = 1
+currentAlertTimer = defaultTimer
+alertTimerThreshold = defaultTimer
+statusText = "No movement detected."
+alertSent = False
 
 #This function inizilizes the program
 def initializeProgram():
@@ -69,7 +70,8 @@ def startCapture():
 
 #This function implements processes the video
 def processVideo(frame, args, firstFrame):
-    
+    global statusText
+    statusText = "No movment detected"
     frame = imutils.resize(frame, width=500)
     frameGray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
     frameBlur = cv2.GaussianBlur(frameGray, (21, 21), 5)
@@ -92,35 +94,34 @@ def processVideo(frame, args, firstFrame):
 def monitorSubject(xaxis, yaxis):
     x = int(xaxis)
     y = int(yaxis)
-    #prevFallState = fallState
-    global statusText, fallState, currentAlertTimer, startAlertTimer
-    if x>y and startAlertTimer > 0:
-        fallState = True
-        statusText = "Suspected fall has occured"
-        currentAlertTimer = 10 - (time.time() - startAlertTimer)
-        print("sending alert in: "+str(currentAlertTimer))
+    global statusText, alertSent, alertTimerThreshold, currentAlertTimer, startAlertTimer
+    if alertSent == True:
+        statusText = "Awaiting response..."
     elif x>y:
-        fallState = True
-        statusText = "Suspected fall has occured"
-        startAlertTimer = time.time()
-        writeToLog("Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.")
-        print("sending alert in: "+str(currentAlertTimer))
-    elif x<y and currentAlertTimer < 10:
-        fallState = False
-        startAlertTimer = 0
-        currentAlertTimer = 10
-        writeToLog("Subject has returned to an upright position.")
-        statusText = "Safe"
+        if currentAlertTimer <= 0:
+            writeToLog("An alert has been sent. Awaiting response...")
+            startAlertTimer = 0
+            currentAlertTimer = alertTimerThreshold
+            alertSent = True
+        elif startAlertTimer != 0:
+            statusText = "Suspected fall has occured"
+            currentAlertTimer = alertTimerThreshold - (time.time() - startAlertTimer)
+        else:
+            statusText = "Suspected fall has occured"
+            startAlertTimer = time.time()
+            writeToLog("Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.")
     elif x<y:
-        fallState = False
-        statusText = "Safe"
-    else:
-        fallState = False
-        #statusText = "No movment is detected"
+        if currentAlertTimer < alertTimerThreshold:
+            startAlertTimer = 0
+            currentAlertTimer = alertTimerThreshold
+            writeToLog("Subject has returned to an upright position.")
+            statusText = "Safe"
+        elif currentAlertTimer == alertTimerThreshold:
+            statusText = "Safe"
 
 #This function sends an alert
-#def sendAlert():
-    #Code goes here
+def sendAlert():
+    statusText = "Awaiting Response..."
     
 #This is the code for the alert box
 def alertBox(title, style):
