@@ -1,100 +1,399 @@
 ********************New Initialization********************
 
-[25Jul2020 201913] - Event Log Initialized!
-[25Jul2020 201913] - Camera feed sucessfully acquired!
-[25Jul2020 201913] - Program fully initilized!
-[25Jul2020 201915] - Terminating Program...
-
-
-
-
-********************New Initialization********************
-
-[25Jul2020 203213] - Event Log Initialized!
-[25Jul2020 203214] - Camera feed sucessfully acquired!
-[25Jul2020 203214] - Program fully initilized!
-[25Jul2020 203216] - Terminating Program...
-
+[26Jul2020 011927] - Event Log Initialized!
+[26Jul2020 011927] - Camera feed sucessfully acquired!
+[26Jul2020 011927] - Program fully initilized!
+[26Jul2020 011946] - Terminating Program...
 
 
 
 ********************New Initialization********************
 
-[25Jul2020 203415] - Event Log Initialized!
-[25Jul2020 203415] - Camera feed sucessfully acquired!
-[25Jul2020 203415] - Program fully initilized!
-[25Jul2020 203418] - Terminating Program...
-
-
-
-
-********************New Initialization********************
-
-[25Jul2020 203656] - Event Log Initialized!
-[25Jul2020 203656] - Camera feed sucessfully acquired!
-[25Jul2020 203656] - Program fully initilized!
-********************New Initialization********************
-
-[25Jul2020 203702] - Event Log Initialized!
-[25Jul2020 203702] - Camera feed sucessfully acquired!
-[25Jul2020 203702] - Program fully initilized!
-********************New Initialization********************
-
-[25Jul2020 203740] - Event Log Initialized!
-[25Jul2020 203740] - Camera feed sucessfully acquired!
-[25Jul2020 203740] - Program fully initilized!
-[25Jul2020 203750] - Terminating Program...
-
+[26Jul2020 012017] - Event Log Initialized!
+[26Jul2020 012017] - Camera feed sucessfully acquired!
+[26Jul2020 012017] - Program fully initilized!
+[26Jul2020 012037] - Terminating Program...
 
 
 
 ********************New Initialization********************
 
-[25Jul2020 203755] - Event Log Initialized!
-[25Jul2020 203755] - Camera feed sucessfully acquired!
-[25Jul2020 203755] - Program fully initilized!
-[25Jul2020 203800] - Terminating Program...
-
-
-
-
-********************New Initialization********************
-
-[25Jul2020 203814] - Event Log Initialized!
-[25Jul2020 203814] - Camera feed sucessfully acquired!
-[25Jul2020 203814] - Program fully initilized!
-[25Jul2020 203816] - Terminating Program...
-
+[26Jul2020 012126] - Event Log Initialized!
+[26Jul2020 012126] - Camera feed sucessfully acquired!
+[26Jul2020 012126] - Program fully initilized!
+[26Jul2020 012145] - Terminating Program...
 
 
 
 ********************New Initialization********************
 
-[25Jul2020 204300] - Event Log Initialized!
-[25Jul2020 204300] - Camera feed sucessfully acquired!
-[25Jul2020 204300] - Program fully initilized!
-[25Jul2020 204302] - Terminating Program...
-
-
-
-
-********************New Initialization********************
-
-[25Jul2020 204411] - Event Log Initialized!
-[25Jul2020 204411] - Camera feed sucessfully acquired!
-[25Jul2020 204411] - Program fully initilized!
-[25Jul2020 204413] - Terminating Program...
-
+[26Jul2020 012146] - Event Log Initialized!
+[26Jul2020 012146] - Camera feed sucessfully acquired!
+[26Jul2020 012146] - Program fully initilized!
+[26Jul2020 012205] - Terminating Program...
 
 
 
 ********************New Initialization********************
 
-[25Jul2020 204522] - Event Log Initialized!
-[25Jul2020 204522] - Camera feed sucessfully acquired!
-[25Jul2020 204522] - Program fully initilized!
-[25Jul2020 204523] - Terminating Program...
+[26Jul2020 012210] - Event Log Initialized!
+[26Jul2020 012210] - Camera feed sucessfully acquired!
+[26Jul2020 012210] - Program fully initilized!
+[26Jul2020 012229] - Terminating Program...
 
+
+
+********************New Initialization********************
+
+[26Jul2020 012719] - Event Log Initialized!
+[26Jul2020 012719] - Camera feed sucessfully acquired!
+[26Jul2020 012719] - Program fully initilized!
+[26Jul2020 012738] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 012853] - Event Log Initialized!
+[26Jul2020 012853] - Camera feed sucessfully acquired!
+[26Jul2020 012853] - Program fully initilized!
+[26Jul2020 012912] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 012920] - Event Log Initialized!
+[26Jul2020 012920] - Camera feed sucessfully acquired!
+[26Jul2020 012920] - Program fully initilized!
+[26Jul2020 012939] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013001] - Event Log Initialized!
+[26Jul2020 013001] - Camera feed sucessfully acquired!
+[26Jul2020 013001] - Program fully initilized!
+[26Jul2020 013020] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013239] - Event Log Initialized!
+[26Jul2020 013239] - Camera feed sucessfully acquired!
+[26Jul2020 013239] - Program fully initilized!
+[26Jul2020 013258] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013410] - Event Log Initialized!
+[26Jul2020 013410] - Camera feed sucessfully acquired!
+[26Jul2020 013410] - Program fully initilized!
+[26Jul2020 013429] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013512] - Event Log Initialized!
+[26Jul2020 013512] - Camera feed sucessfully acquired!
+[26Jul2020 013512] - Program fully initilized!
+[26Jul2020 013531] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013619] - Event Log Initialized!
+[26Jul2020 013619] - Camera feed sucessfully acquired!
+[26Jul2020 013619] - Program fully initilized!
+[26Jul2020 013638] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013700] - Event Log Initialized!
+[26Jul2020 013700] - Camera feed sucessfully acquired!
+[26Jul2020 013700] - Program fully initilized!
+[26Jul2020 013719] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013725] - Event Log Initialized!
+[26Jul2020 013725] - Camera feed sucessfully acquired!
+[26Jul2020 013725] - Program fully initilized!
+[26Jul2020 013744] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013811] - Event Log Initialized!
+[26Jul2020 013811] - Camera feed sucessfully acquired!
+[26Jul2020 013811] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 013825] - Event Log Initialized!
+[26Jul2020 013825] - Camera feed sucessfully acquired!
+[26Jul2020 013825] - Program fully initilized!
+[26Jul2020 013844] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013901] - Event Log Initialized!
+[26Jul2020 013901] - Camera feed sucessfully acquired!
+[26Jul2020 013901] - Program fully initilized!
+[26Jul2020 013920] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 013958] - Event Log Initialized!
+[26Jul2020 013958] - Camera feed sucessfully acquired!
+[26Jul2020 013958] - Program fully initilized!
+[26Jul2020 014017] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014020] - Event Log Initialized!
+[26Jul2020 014020] - Camera feed sucessfully acquired!
+[26Jul2020 014020] - Program fully initilized!
+[26Jul2020 014039] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014127] - Event Log Initialized!
+[26Jul2020 014127] - Camera feed sucessfully acquired!
+[26Jul2020 014127] - Program fully initilized!
+[26Jul2020 014146] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014153] - Event Log Initialized!
+[26Jul2020 014153] - Camera feed sucessfully acquired!
+[26Jul2020 014153] - Program fully initilized!
+[26Jul2020 014211] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014219] - Event Log Initialized!
+[26Jul2020 014219] - Camera feed sucessfully acquired!
+[26Jul2020 014219] - Program fully initilized!
+[26Jul2020 014238] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014245] - Event Log Initialized!
+[26Jul2020 014245] - Camera feed sucessfully acquired!
+[26Jul2020 014245] - Program fully initilized!
+[26Jul2020 014304] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014445] - Event Log Initialized!
+[26Jul2020 014445] - Camera feed sucessfully acquired!
+[26Jul2020 014445] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 014508] - Event Log Initialized!
+[26Jul2020 014508] - Camera feed sucessfully acquired!
+[26Jul2020 014508] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 014610] - Event Log Initialized!
+[26Jul2020 014610] - Camera feed sucessfully acquired!
+[26Jul2020 014610] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 014624] - Event Log Initialized!
+[26Jul2020 014624] - Camera feed sucessfully acquired!
+[26Jul2020 014624] - Program fully initilized!
+[26Jul2020 014643] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014729] - Event Log Initialized!
+[26Jul2020 014729] - Camera feed sucessfully acquired!
+[26Jul2020 014729] - Program fully initilized!
+[26Jul2020 014748] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014823] - Event Log Initialized!
+[26Jul2020 014823] - Camera feed sucessfully acquired!
+[26Jul2020 014823] - Program fully initilized!
+[26Jul2020 014842] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 014911] - Event Log Initialized!
+[26Jul2020 014912] - Camera feed sucessfully acquired!
+[26Jul2020 014912] - Program fully initilized!
+[26Jul2020 014930] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 015040] - Event Log Initialized!
+[26Jul2020 015040] - Camera feed sucessfully acquired!
+[26Jul2020 015040] - Program fully initilized!
+[26Jul2020 015059] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 015147] - Event Log Initialized!
+[26Jul2020 015147] - Camera feed sucessfully acquired!
+[26Jul2020 015147] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 015159] - Event Log Initialized!
+[26Jul2020 015159] - Camera feed sucessfully acquired!
+[26Jul2020 015159] - Program fully initilized!
+[26Jul2020 015218] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 015244] - Event Log Initialized!
+[26Jul2020 015244] - Camera feed sucessfully acquired!
+[26Jul2020 015244] - Program fully initilized!
+[26Jul2020 015253] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 015255] - Event Log Initialized!
+[26Jul2020 015255] - Camera feed sucessfully acquired!
+[26Jul2020 015255] - Program fully initilized!
+[26Jul2020 015258] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 015803] - Event Log Initialized!
+[26Jul2020 015803] - Camera feed sucessfully acquired!
+[26Jul2020 015803] - Program fully initilized!
+[26Jul2020 015822] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 020055] - Event Log Initialized!
+[26Jul2020 020055] - Camera feed sucessfully acquired!
+[26Jul2020 020055] - Program fully initilized!
+[26Jul2020 020113] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 020131] - Event Log Initialized!
+[26Jul2020 020131] - Camera feed sucessfully acquired!
+[26Jul2020 020131] - Program fully initilized!
+[26Jul2020 020150] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 020158] - Event Log Initialized!
+[26Jul2020 020158] - Camera feed sucessfully acquired!
+[26Jul2020 020158] - Program fully initilized!
+[26Jul2020 020217] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 020628] - Event Log Initialized!
+[26Jul2020 020628] - Camera feed sucessfully acquired!
+[26Jul2020 020628] - Program fully initilized!
+[26Jul2020 020647] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 020854] - Event Log Initialized!
+[26Jul2020 020854] - Camera feed sucessfully acquired!
+[26Jul2020 020854] - Program fully initilized!
+[26Jul2020 020856] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 021157] - Event Log Initialized!
+[26Jul2020 021157] - Camera feed sucessfully acquired!
+[26Jul2020 021157] - Program fully initilized!
+[26Jul2020 021219] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 021234] - Event Log Initialized!
+[26Jul2020 021234] - Camera feed sucessfully acquired!
+[26Jul2020 021234] - Program fully initilized!
+[26Jul2020 021253] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 021443] - Event Log Initialized!
+[26Jul2020 021443] - Camera feed sucessfully acquired!
+[26Jul2020 021443] - Program fully initilized!
+********************New Initialization********************
+
+[26Jul2020 021504] - Event Log Initialized!
+[26Jul2020 021504] - Camera feed sucessfully acquired!
+[26Jul2020 021504] - Program fully initilized!
+[26Jul2020 021523] - Terminating Program...
+
+
+
+********************New Initialization********************
+
+[26Jul2020 021531] - Event Log Initialized!
+[26Jul2020 021531] - Camera feed sucessfully acquired!
+[26Jul2020 021531] - Program fully initilized!
+[26Jul2020 021550] - Terminating Program...
 
 
 
