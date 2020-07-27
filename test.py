@@ -1,12 +1,11 @@
+#import packages
 import cv2
 import time
 from datetime import datetime
-import numpy as np
 import imutils
 from imutils.video import VideoStream
 import sys
 import argparse
-import threading
 import ctypes
 
 #Globals
@@ -16,6 +15,8 @@ currentAlertTimer = defaultTimer
 alertTimerThreshold = defaultTimer
 statusText = "No movement detected."
 alertSent = False
+fallDetected = False
+personInFrame = False
 
 #This function inizilizes the program
 def initializeProgram():
@@ -121,6 +122,7 @@ def monitorSubject(xaxis, yaxis):
 
 #This function sends an alert
 def sendAlert():
+    global alertSent = True
     statusText = "Awaiting Response..."
     
 #This is the code for the alert box
@@ -144,19 +146,12 @@ def closeProgram(capture):
 #This is the main function of the program
 def main():
     args, firstFrame, capture, frameWidth, frameHeight = initializeProgram()
-    
     while (True):
-        #Read frames
         ret, frame = capture.read()
-        #new code
         if frame is None:
             break
-        #Process video feed
         frame, firstFrame = processVideo(frame, args, firstFrame)
-        #Display processed video feed
         displayVideo(frame)
-        time.sleep(0.05)
-        #Hotkey to break the loop
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     closeProgram(capture)
