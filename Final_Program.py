@@ -9,28 +9,16 @@ import argparse
 import ctypes
 
 #Globals
-statusText = "No movement detected."
-fallDetected = False
-
-resetTimerVariable = 0
-
-#For sending an alert
-alertSendTimerStartTime = 0
-alertSendTimerCurrentTime = 0
-alertSendTimerThreshold = 10
-alertSent = False
-
-#For determining a subject is in frame
-subjectDetectedState = False
-subjectDetectedTimerStartTime = 0
-subjectDetectedTimerInit = False
-subjectDetectedTimerCurrent = 0
-subjectDetectedTimerThreshold = 2
-subjectDetectedFrameCurrent = False
-subjectDetectedFrameLast = False
-
+startAlertTimer = 0
+defaultTimer = 1
 currentAlertTimer = defaultTimer
 alertTimerThreshold = defaultTimer
+statusText = "No movement detected."
+previousStatusText = "NULL"
+prevprevStatusText = "Null"
+alertSent = False
+fallDetected = False
+personInFrame = False
 
 #This function inizilizes the program
 def initializeProgram():
@@ -85,8 +73,10 @@ def startCapture():
 
 #This function implements processes the video
 def processVideo(frame, args, firstFrame):
-    global statusText
-    statusText = "No movment detected"
+    global statusText, previousStatusText, prevprevStatusText
+    prevprevStatusText = previousStatusText
+    previousStatusText = statusText
+    statusText = "No movement detected."
     frame = imutils.resize(frame, width=500)
     frameGray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
     frameBlur = cv2.GaussianBlur(frameGray, (21, 21), 5)
@@ -98,52 +88,53 @@ def processVideo(frame, args, firstFrame):
     contoursFind = cv2.findContours(frameDilate.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     contoursGrab = imutils.grab_contours(contoursFind)
     for c in contoursGrab:
-        detectSubject()
         if cv2.contourArea(c) < args["min_area"]:
             continue
-        personInFrame = True
         (x, y, w, h) = cv2.boundingRect(c)
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         monitorSubject(w,h)
+    enterExit()
     return frame, firstFrame
-
-#This function verifies a subject is moving in frame
-def detectSubject():
-    global subjectDetectedFrameCurrent, subjectDetectedFrameLast
-    subjectDetectedFrameLast = subjectDetectedFrameCurrent
-        subjectDetectedFrameCurrent = True
-        #Initial Subject detection
-        if subjectDetectedFrameCurrent == True and subjectDetectedFrameLast == True and subjectDetectedState = False:
-            #Start Timer
-            subjectDetectedTimerInit == False:
-            subjectDetectedTimerStartTime = time.time()
-            subjectDetectedTimerInit = True
-        #Update Timer
-        elif (subjectDetectedTimerInit == True) and (subjectDetectedTimerCurrent == 0 or subjectDetectedTimerCurrent <= subjectDetectedTimerThreshold):
-            subjectDetectedTimerCurrent = subjectDetectedTimerThreshold - (time.time() - subjectDetectedTimerStartTime)
-        #Set detected state to true if timer passes threshold
-        elif subjectDetectedTimerCurrent > subjectDetectedTimerThreshold:
-            subjectDetectedState = True
-            subjectDetectedTimerInit = False
-            subjectDetectedTimerCurrent = 0
-            subjectDetectedTimerStartTime = 0
-            writeToLog("Subject has entered the view. Proceeding to monitor...")
-        else: 
 
 #This function monitors a subject when in frame
 def monitorSubject(xaxis, yaxis):
     x = int(xaxis)
     y = int(yaxis)
-    if fallDetected == True:
-        kl;j;lj
-    elif fallDetected == False:
-        ;oijhr;oiewh
-    
+    global statusText, alertSent, alertTimerThreshold, currentAlertTimer, startAlertTimer
+    if alertSent == True:
+        statusText = "Alert has been Sent. Awaiting help..."
+    elif x>y:
+        if currentAlertTimer <= 0:
+            writeToLog("Alert has been Sent. Awaiting help...")
+            startAlertTimer = 0
+            currentAlertTimer = alertTimerThreshold
+            alertSent = True
+        elif startAlertTimer != 0:
+            statusText = "Subject appears to have fallen."
+            currentAlertTimer = alertTimerThreshold - (time.time() - startAlertTimer)
+        else:
+            statusText = "Subject appears to have fallen."
+            startAlertTimer = time.time()
+            writeToLog("Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.")
+    elif x<y:
+        if currentAlertTimer < alertTimerThreshold:
+            startAlertTimer = 0
+            currentAlertTimer = alertTimerThreshold
+            writeToLog("Subject has returned to an upright position.")
+            statusText = "Subject is safe."
+        elif currentAlertTimer == alertTimerThreshold:
+            statusText = "Subject is safe."
+
+#Entry/Exit logging. Designed misread frames don't incorrectly log
+def enterExit():
+    global prevprevStatusText, statusText
+    if prevprevStatusText == "No movement detected." and previousStatusText == "No movement detected." and statusText == "Subject is safe.":
+        writeToLog("Subject has entered the camera's view.")
+    elif prevprevStatusText == "Subject is safe." and previousStatusText == "No movement detected." and statusText == "No movement detected.":
+        writeToLog("Subject has left the camera's view.")
 
 #This function sends an alert
 def sendAlert():
-    global alertSent
-    alertSent = True
     statusText = "Awaiting Response..."
     
 #This is the code for the alert box
@@ -152,7 +143,8 @@ def alertBox(title, style):
 
 #This function displays the Video
 def displayVideo(frame):
-    cv2.putText(frame, "Date/Time: {}".format(getTimeStamp()), (5, 275), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
+    #Add timestamp to the video then display
+    frame = cv2.putText(frame, "Date/Time: {}".format(getTimeStamp()), (5, 275), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
     cv2.putText(frame, "Room Status: {}".format(statusText), (5, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
     cv2.imshow("Fall Alert Detection System", frame)
 
@@ -169,13 +161,11 @@ def main():
     while (True):
         ret, frame = capture.read()
         if frame is None:
-            writeToLog("ERROR: Video feed has been interupted!")
             break
         frame, firstFrame = processVideo(frame, args, firstFrame)
         displayVideo(frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
-        time.sleep(0.05)
     closeProgram(capture)
 
 #Script

@@ -1,33 +1,10 @@
 ********************New Initialization********************
 
-[26Jul2020 135051] - Event Log Initialized!
-[26Jul2020 135051] - Camera feed sucessfully acquired!
-[26Jul2020 135051] - Program fully initilized!
-[26Jul2020 135059] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[26Jul2020 135100] - An alert has been sent. Awaiting response...
-[26Jul2020 135100] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[26Jul2020 135101] - An alert has been sent. Awaiting response...
-[26Jul2020 135102] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[26Jul2020 135103] - An alert has been sent. Awaiting response...
-[26Jul2020 135103] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[26Jul2020 135104] - Subject has returned to an upright position.
-[26Jul2020 135110] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[26Jul2020 135457] - Event Log Initialized!
-[26Jul2020 135457] - Camera feed sucessfully acquired!
-[26Jul2020 135457] - Program fully initilized!
-********************New Initialization********************
-
-[26Jul2020 135526] - Event Log Initialized!
-[26Jul2020 135526] - Camera feed sucessfully acquired!
-[26Jul2020 135526] - Program fully initilized!
-[26Jul2020 135534] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[26Jul2020 135535] - An alert has been sent. Awaiting response...
-[26Jul2020 135545] - Terminating Program...
-
-
-
+[28Jul2020 011827] - Event Log Initialized!
+[28Jul2020 011827] - Camera feed sucessfully acquired!
+[28Jul2020 011827] - Program fully initilized!
+[28Jul2020 011828] - Subject has entered the camera's view.
+[28Jul2020 011829] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[28Jul2020 011829] - Subject has returned to an upright position.
+[28Jul2020 011830] - Subject has left the camera's view.
+[28Jul2020 011830] - Terminating Program...
