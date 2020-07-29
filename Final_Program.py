@@ -10,7 +10,7 @@ import ctypes
 
 #Globals
 startAlertTimer = 0
-defaultTimer = 1
+defaultTimer = 10
 currentAlertTimer = defaultTimer
 alertTimerThreshold = defaultTimer
 statusText = "No movement detected."
@@ -164,6 +164,7 @@ def main():
             break
         frame, firstFrame = processVideo(frame, args, firstFrame)
         displayVideo(frame)
+        time.sleep(0.05)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     closeProgram(capture)
