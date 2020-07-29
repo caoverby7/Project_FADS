@@ -20,6 +20,3 @@
 [28Jul2020 192441] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
 [28Jul2020 192444] - Alert has been Sent. Awaiting help...
 [28Jul2020 192452] - Terminating Program...
-
-
-
