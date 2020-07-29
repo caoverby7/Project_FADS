@@ -145,7 +145,7 @@ def alertBox(title, style):
 def displayVideo(frame):
     #Add timestamp to the video then display
     frame = cv2.putText(frame, "Date/Time: {}".format(getTimeStamp()), (5, 275), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
-    cv2.putText(frame, "Room Status: {}".format(statusText), (5, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
+    cv2.putText(frame, "Status: {}".format(statusText), (5, 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
     cv2.imshow("Fall Alert Detection System", frame)
 
 #This function closes the program
