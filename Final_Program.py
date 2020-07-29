@@ -135,10 +135,6 @@ def enterExit():
 #This function sends an alert
 def sendAlert():
     statusText = "Awaiting Response..."
-    
-#This is the code for the alert box
-def alertBox(title, style):
-    return ctypes.windll.user32.MessageBoxW(0, text, title, style)
 
 #This function displays the Video
 def displayVideo(frame):
