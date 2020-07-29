@@ -1,141 +1,25 @@
 ********************New Initialization********************
 
-[28Jul2020 011827] - Event Log Initialized!
-[28Jul2020 011827] - Camera feed sucessfully acquired!
-[28Jul2020 011827] - Program fully initilized!
-[28Jul2020 011828] - Subject has entered the camera's view.
-[28Jul2020 011829] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[28Jul2020 011829] - Subject has returned to an upright position.
-[28Jul2020 011830] - Subject has left the camera's view.
-[28Jul2020 011830] - Terminating Program...********************New Initialization********************
-
-[28Jul2020 141214] - Event Log Initialized!
-[28Jul2020 141214] - Camera feed sucessfully acquired!
-[28Jul2020 141214] - Program fully initilized!
-[28Jul2020 141214] - Terminating Program...
+[28Jul2020 192335] - Event Log Initialized!
+[28Jul2020 192335] - Camera feed sucessfully acquired!
+[28Jul2020 192335] - Program fully initilized!
+[28Jul2020 192339] - Subject has entered the camera's view.
+[28Jul2020 192343] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[28Jul2020 192348] - Subject has returned to an upright position.
+[28Jul2020 192353] - Subject has left the camera's view.
+[28Jul2020 192354] - Terminating Program...
 
 
 
 ********************New Initialization********************
 
-[28Jul2020 141229] - Event Log Initialized!
-[28Jul2020 141229] - Camera feed sucessfully acquired!
-[28Jul2020 141229] - Program fully initilized!
-[28Jul2020 141229] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 141246] - Event Log Initialized!
-[28Jul2020 141246] - Camera feed sucessfully acquired!
-[28Jul2020 141246] - Program fully initilized!
-[28Jul2020 141246] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 190558] - Event Log Initialized!
-[28Jul2020 190558] - Camera feed sucessfully acquired!
-[28Jul2020 190558] - Program fully initilized!
-[28Jul2020 190558] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 190636] - Event Log Initialized!
-[28Jul2020 190636] - Camera feed sucessfully acquired!
-[28Jul2020 190636] - Program fully initilized!
-[28Jul2020 190637] - Subject has entered the camera's view.
-[28Jul2020 190638] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[28Jul2020 190638] - Subject has returned to an upright position.
-[28Jul2020 190639] - Subject has left the camera's view.
-[28Jul2020 190639] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 190710] - Event Log Initialized!
-[28Jul2020 190710] - Camera feed sucessfully acquired!
-[28Jul2020 190710] - Program fully initilized!
-[28Jul2020 190713] - Subject has entered the camera's view.
-[28Jul2020 190718] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[28Jul2020 190719] - Alert has been Sent. Awaiting help...
-[28Jul2020 190728] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 190749] - Event Log Initialized!
-[28Jul2020 190749] - Camera feed sucessfully acquired!
-[28Jul2020 190749] - Program fully initilized!
-[28Jul2020 190753] - Subject has entered the camera's view.
-[28Jul2020 190757] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[28Jul2020 190758] - Alert has been Sent. Awaiting help...
-[28Jul2020 190808] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 190821] - Event Log Initialized!
-[28Jul2020 190821] - Camera feed sucessfully acquired!
-[28Jul2020 190821] - Program fully initilized!
-[28Jul2020 190825] - Subject has entered the camera's view.
-[28Jul2020 190829] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[28Jul2020 190834] - Subject has returned to an upright position.
-[28Jul2020 190839] - Subject has left the camera's view.
-[28Jul2020 190840] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 190855] - Event Log Initialized!
-[28Jul2020 190855] - Camera feed sucessfully acquired!
-[28Jul2020 190855] - Program fully initilized!
-[28Jul2020 190856] - Subject has entered the camera's view.
-[28Jul2020 190856] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[28Jul2020 190857] - Subject has returned to an upright position.
-[28Jul2020 190858] - Subject has left the camera's view.
-[28Jul2020 190858] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 190904] - Event Log Initialized!
-[28Jul2020 190904] - Camera feed sucessfully acquired!
-[28Jul2020 190904] - Program fully initilized!
-[28Jul2020 190924] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 190931] - Event Log Initialized!
-[28Jul2020 190931] - Camera feed sucessfully acquired!
-[28Jul2020 190931] - Program fully initilized!
-[28Jul2020 191003] - Subject has entered the camera's view.
-[28Jul2020 191040] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[28Jul2020 191050] - Alert has been Sent. Awaiting help...
-[28Jul2020 191150] - Terminating Program...
-
-
-
-********************New Initialization********************
-
-[28Jul2020 191202] - Event Log Initialized!
-[28Jul2020 191202] - Camera feed sucessfully acquired!
-[28Jul2020 191202] - Program fully initilized!
-[28Jul2020 191206] - Subject has entered the camera's view.
-[28Jul2020 191210] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
-[28Jul2020 191215] - Subject has returned to an upright position.
-[28Jul2020 191219] - Terminating Program...
+[28Jul2020 192433] - Event Log Initialized!
+[28Jul2020 192433] - Camera feed sucessfully acquired!
+[28Jul2020 192433] - Program fully initilized!
+[28Jul2020 192437] - Subject has entered the camera's view.
+[28Jul2020 192441] - Suspected fall has occured. An alert will be sent if subject does not stand back up within 10 seconds.
+[28Jul2020 192444] - Alert has been Sent. Awaiting help...
+[28Jul2020 192452] - Terminating Program...
 
 
 
